@@ -15,7 +15,11 @@
     "@types/node": "^9.6.1",
     "nodemon": "^1.17.2",
     "ts-node": "^5.0.1",
-    "typescript": "^2.8.1",
-    "ms-rest-js": "^0.2.7"
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "@types/request": "^2.47.0",
+    "ms-rest-js": "^0.2.7",
+    "request": "^2.85.0"
   }
 }
