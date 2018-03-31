@@ -20,10 +20,11 @@ async function auth() {
 }
 
 async function listVms() {
-    let list = await msRest.dispatchRequest(new msRest.WebResource(`${host}/vcenter/vm`));
+    let list = await msRest.dispatchRequest(new msRest.WebResource(`${host}/rest/vcenter/vm`));
     console.log(list);
 }
 
-auth();
-listVms();
+auth().then(() => {
+    listVms();
+})
 
