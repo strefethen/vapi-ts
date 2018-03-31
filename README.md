@@ -1,4 +1,4 @@
-# vapi-ts
+# vsphere-ts
 
 Basic NodeJS example to list VM's using the vSphere REST API
 
@@ -11,10 +11,15 @@ Install TypeScript
 
     npm install -g typescript
 
-## Install
-To run the sample after cloning the repo:
+This sample uses Microsoft's [ms-rest-js](https://github.com/Azure/ms-rest-js) npm package installed below.
 
-    cd vapi-ts
+## Install
+To run the sample after cloning the repo first update the host on line 5:
+
+    let host = "https://sc2-rdops-vm06-dhcp-195-173";
+
+Then install npm modules and start the watcher which will automatically execute index.ts
+
     npm install
     npm start
     
